@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<body>
+    <header>
+        <nav th:replace="~{fragments/navbar :: navbar('Ticket Platform')}"></nav>
+    </header>
+
+    <main>
+        <div class="containerhomepagecenterhome">
+
+            <a th:href="@{/tickets}" class="clicklinkhome">
+                <h1>
+                   Tickets 
+                </h1>
+            </a>
+            <a th:href="@{/operators}" class="clicklinkhome">
+                <h1>
+                   Operators
+                </h1>
+            </a>
+        </div>
+    </main>
+
+   
+</body>
+
+</html>
